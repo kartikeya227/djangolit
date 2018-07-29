@@ -1,0 +1,366 @@
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999;
+}
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+.loading-text span {
+  display: inline-block;
+  margin: 0 50px;
+  color: #fff;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+.loading-text span:nth-child(1) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
+          animation: blur-text 1.5s 0s infinite linear alternate;
+}
+.loading-text span:nth-child(2) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
+          animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+.loading-text span:nth-child(3) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
+          animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+.loading-text span:nth-child(4) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
+          animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+.loading-text span:nth-child(5) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
+          animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+.loading-text span:nth-child(6) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
+          animation: blur-text 1.5s 1s infinite linear alternate;
+}
+.loading-text span:nth-child(7) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
+          animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+@-webkit-keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+}
+
+html,
+        body,
+        .view {
+            height: 100%;
+        }
+
+        /* Navigation*/
+
+        .navbar {
+            background-color: transparent;
+        }
+
+        .scrolling-navbar {
+            -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            transition: background .5s ease-in-out, padding .5s ease-in-out;
+        }
+
+        .top-nav-collapse {
+            background-color: #1C2331;
+        }
+
+        footer.page-footer {
+            background-color: #1C2331;
+            margin-top: 0;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .navbar {
+                background-color: #1C2331;
+            }
+            .display-3 {
+                font-size: 2rem;
+                margin-top: 6rem;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+        }
+
+        @media only screen and (max-width: 667px) {
+            .display-3 {
+                font-size: 3rem;
+            }
+        }
+
+        /* Carousel*/
+        .carousel,
+        .carousel-item,
+        .active {
+            height: 100%;
+        }
+
+        .carousel-inner {
+            height: 100%;
+            
+        }
+
+        /*Caption*/
+
+        .flex-center {
+            color: #fff;
+        }
+
+        @media (min-width: 776px) {
+            .carousel .view ul li {
+                display: inline;
+            }
+            .carousel .view .full-bg-img ul li .flex-item {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .navbar .btn-group .dropdown-menu a:hover {
+            color: #000 !important;
+        }
+
+        .navbar .btn-group .dropdown-menu a:active {
+            color: #fff !important;
+        }
+
+
+
+        .parallax {
+    /* The image used */
+    background-image: url('aboutme.jpeg');
+
+    /* Full height */
+    height: 85%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  .parallax1 {
+      /* The image used */
+      background-image: url('contact.jpeg');
+
+      /* Full height */
+      height: 75%; 
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.parallax2 {
+      /* The image used */
+      background-image: url('project.jpeg');
+
+      /* Full height */
+      height: 55%; 
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.parallax3 {
+      /* The image used */
+      background-image: url('club.jpeg');
+
+      /* Full height */
+      height: 65%; 
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.parallax4 {
+      /* The image used */
+      background-image: url('thankyou.jpeg');
+
+      /* Full height */
+      height: 40%; 
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.parallax5 {
+      /* The image used */
+      background-color:   #000000;
+
+      /* Full height */
+      height: 14%; 
+      color: white;
+      font-size: 1em;
+
+      font-family: 'Open Sans Condensed', sans-serif;
+      text-align: center;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+.buttone1 {
+    position: relative;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.buttone1:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.buttone1:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+.buttone1:hover {
+    box-shadow: 0 90px 90px 0 rgba(0,0,0,0.4), 0 90px 90px 0 rgba(0,0,0,0.4);
+}
+.buttone1{border-radius: 30px;}
+
+
+
+
+
+.buttonc {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+      transition: all 0.5s;
+    border-radius: 4px;
+}
+.buttonc:hover {
+    box-shadow: 0 50px 50px 0 rgba(0,0,0,0.4), 0 20px 20px 0 rgba(0,0,0,0.4);
+}
+
+.buttonc  span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonc span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonc:hover span {
+  padding-right: 25px;
+}
+
+.buttonc:hover span:after {
+  opacity: 1;
+  right: 0;
+}
